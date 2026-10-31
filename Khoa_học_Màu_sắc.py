@@ -22,7 +22,7 @@ with col_phai:
 with col_giua:
     st.markdown(
         "<h2 style='text-align:center;'>Chào mừng bạn đến với project Khoa học Màu sắc của mình!</h2>"
-        "<h1 style='text-align:center;'>Mình tên là Võ Tự Thanh, MaSV 22158139</h1>",
+        "<h1 style='text-align:center;'>Mình tên là Trần Ngọc Tuyền, MSSV là 23458022</h1>",
         unsafe_allow_html=True,
     )
 
@@ -36,9 +36,9 @@ st.markdown(
 4. Gamut màu của thiết bị RGB
 5. Gamut màu của máy in (từ file gamut)
 6. Đặc tính hoá máy in nửa tông
-7. **Biểu đồ CIE dạng band (400 – 700 nm)**
-8. **Biểu đồ CIELab và nhận xét chuyển dịch màu Lab1 → Lab2**
-9. **So sánh gamut các không gian màu và máy in**
+7. Biểu đồ CIE dạng band (400 – 700 nm)
+8. Biểu đồ CIELab và nhận xét chuyển dịch màu Lab1 → Lab2
+9. So sánh gamut các không gian màu và máy in
 
 👈 Chọn trang ở thanh bên trái.
 """
