@@ -1,18 +1,17 @@
+import os
 import streamlit as st
-from pathlib import Path
 
-st.set_page_config(page_title="Khoa học Màu sắc", layout="wide")
+st.set_page_config(page_title="Khoa học màu sắc", page_icon="🎨", layout="wide")
 
-THU_MUC_ANH = Path(__file__).parent / "images"
+BASE = os.path.dirname(os.path.abspath(__file__))
 
 
-def hien_logo(ten_file, rong=150):
-    duong_dan = THU_MUC_ANH / ten_file
-    if duong_dan.exists():
-        st.image(str(duong_dan), width=rong)
+def show_logo(filename, caption):
+    path = os.path.join(BASE, "assets", filename)
+    if os.path.exists(path):
+        st.image(path, width=160)
     else:
-        st.caption(f"(Chưa có file images/{ten_file})")
-
+        st.info(f"Chưa có {filename} trong thư mục assets/")
 
 col_trai, col_giua, col_phai = st.columns([1, 3, 1])
 with col_trai:
